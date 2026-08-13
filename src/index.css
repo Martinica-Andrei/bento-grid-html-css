@@ -73,3 +73,22 @@ body {
     max-width: 100%;
     order: -1;
 }
+
+/* maintain-schedule 
+-----------------------------------------------------------------------------*/
+
+.maintain-schedule{
+    background-color: var(--Yellow-500);
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    padding: 15px 20px 0;
+}
+
+.maintain-schedule *{
+    max-width: 250px;
+}
+
+.maintain-schedule img{
+    flex: 1 1 0;    
+}
