@@ -20,7 +20,12 @@
     --Black: hsl(0, 0%, 7%);
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    min-height: 100%;
     font-size: 1.125rem;
     font-family: dm-sans, sans-serif;
     line-height: 1;
@@ -44,6 +49,10 @@ body {
     width: 100%;
 }
 
+.content>section:hover {
+    box-shadow: 3px 3px 3px black;
+}
+
 /* social-media-10x
 -----------------------------------------------------------------------------*/
 
@@ -52,6 +61,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
     padding: 30px 15px;
     color: var(--White)
@@ -75,12 +85,11 @@ body {
     flex-direction: column;
     padding: 15px;
     gap: 10px;
+    overflow: hidden;
 }
 
 .manage-multiple img {
-    max-width: 400px;
-    width: 100%;
-    align-self: center;
+    width: 300px;
     order: -1;
 }
 
@@ -89,15 +98,14 @@ body {
 
 .maintain-schedule {
     background-color: var(--Yellow-500);
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
     padding: 15px 20px 0;
+    overflow: hidden;
 }
 
 .maintain-schedule img {
-    max-width: 220px;
-    flex: 1 1 0;
+    margin-top: 15px;
+    max-width: 180px;
+    margin-bottom: -5px;
 }
 
 .maintain-schedule h2 {
@@ -112,14 +120,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 20px;
+    padding: 30px 20px 30px;
     gap: 25px;
     text-align: center;
+    overflow:hidden;
+}
+
+.schedule-to-social-media :is(p, h2) {
+    padding-right: 20px;
 }
 
 .schedule-to-social-media img {
-    max-width: 400px;
     width: 100%;
+    flex: 1 1 0;
 }
 
 /* grow-followers
@@ -128,7 +141,8 @@ body {
 .grow-followers {
     background-color: var(--Purple-500);
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     padding: 30px 20px;
     gap: 20px;
@@ -137,13 +151,13 @@ body {
 }
 
 .grow-followers img {
-    max-width: 300px;
+    max-width: 200px;
     width: 100%;
     order: -1;
 }
 
 .grow-followers h2 {
-    max-width: 300px;
+    flex: 1 1 0;
 }
 
 /* faster-audience-growth
@@ -151,6 +165,9 @@ body {
 
 .faster-audience-growth {
     padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .faster-audience-growth img {
@@ -176,6 +193,10 @@ body {
 -----------------------------------------------------------------------------*/
 
 .create-content-quicker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
     padding: 25px;
     background-color: var(--Yellow-100);
 }
@@ -183,7 +204,6 @@ body {
 .create-content-quicker img {
     max-width: 200px;
     width: 100%;
-    margin-top: 20px;
 }
 
 .create-content-quicker em {
@@ -196,24 +216,33 @@ body {
 .write-your-content {
     padding: 20px;
     background-color: var(--Yellow-500);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
 }
 
 .write-your-content img {
     max-width: 250px;
     width: 100%;
-    margin-top: 20px;
 }
 
 /* media 
 -----------------------------------------------------------------------------*/
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .content {
         display: grid;
         grid-template-rows: repeat(12, minmax(0, 1fr));
         grid-template-columns: repeat(12, minmax(0, 1fr));
-        width: 1200px;
-        height: 900px;
+        width: 1000px;
+        height: 750px;
     }
 
     .content>section {
@@ -235,6 +264,12 @@ body {
     .schedule-to-social-media {
         grid-row: 1 / 9;
         grid-column: 10 / 13;
+        text-align: left;
+    }
+
+    .schedule-to-social-media img {
+        align-self: start;
+        width:120%;
     }
 
     .manage-multiple {
