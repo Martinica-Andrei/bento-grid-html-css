@@ -54,8 +54,7 @@ body {
     align-items: center;
     text-align: center;
     padding: 30px 15px;
-    color: var(--White);
-    grid-area: "social-media-10x";
+    color: var(--White)
 }
 
 .social-media-10x img {
@@ -76,7 +75,6 @@ body {
     flex-direction: column;
     padding: 15px;
     gap: 10px;
-    grid-area: "manage-multiple";
 }
 
 .manage-multiple img {
@@ -95,7 +93,6 @@ body {
     flex-direction: column;
     gap: 15px;
     padding: 15px 20px 0;
-    grid-area: "maintain-schedule";
 }
 
 .maintain-schedule img {
@@ -118,7 +115,6 @@ body {
     padding: 30px 20px;
     gap: 25px;
     text-align: center;
-    grid-area: "schedule-to-social-media";
 }
 
 .schedule-to-social-media img {
@@ -138,7 +134,6 @@ body {
     gap: 20px;
     text-align: center;
     color: white;
-    grid-area: "grow-followers";
 }
 
 .grow-followers img {
@@ -156,7 +151,6 @@ body {
 
 .faster-audience-growth {
     padding: 15px 20px;
-    grid-area: "faster-audience-growth";
 }
 
 .faster-audience-growth img {
@@ -184,7 +178,6 @@ body {
 .create-content-quicker {
     padding: 25px;
     background-color: var(--Yellow-100);
-    grid-area: "create-content-quicker";
 }
 
 .create-content-quicker img {
@@ -203,20 +196,10 @@ body {
 .write-your-content {
     padding: 20px;
     background-color: var(--Yellow-500);
-    grid-area: "write-your-content";
 }
 
 .write-your-content img {
     max-width: 250px;
     width: 100%;
     margin-top: 20px;
-}
-
-/* media
------------------------------------------------------------------------------*/
-
-@media screen and (min-width:1200px) {
-    .content{
-        display:grid;
-    }
 }
