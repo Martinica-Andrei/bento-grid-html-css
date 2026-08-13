@@ -203,3 +203,63 @@ body {
     width: 100%;
     margin-top: 20px;
 }
+
+/* media 
+-----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1200px) {
+    .content {
+        display: grid;
+        grid-template-rows: repeat(12, minmax(0, 1fr));
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        width: 1200px;
+        height: 900px;
+    }
+
+    .content>section {
+        max-width: unset;
+        width: unset;
+        height: 100%;
+    }
+
+    .create-content-quicker {
+        grid-row: 1 / 7;
+        grid-column: 1 / 4;
+    }
+
+    .social-media-10x {
+        grid-row: 1 / 5;
+        grid-column: 4 / 10;
+    }
+
+    .schedule-to-social-media {
+        grid-row: 1 / 9;
+        grid-column: 10 / 13;
+    }
+
+    .manage-multiple {
+        grid-row: 5 / 9;
+        grid-column: 4 / 7;
+
+    }
+
+    .maintain-schedule {
+        grid-row: 5 / 9;
+        grid-column: 7 / 10;
+    }
+
+    .write-your-content {
+        grid-row: 7 / 13;
+        grid-column: 1 / 4;
+    }
+
+    .faster-audience-growth {
+        grid-row: 9 / 13;
+        grid-column: 4 / 7;
+    }
+
+    .grow-followers {
+        grid-row: 9 / 13;
+        grid-column: 7 / 13;
+    }
+}
