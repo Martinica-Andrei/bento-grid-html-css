@@ -1,4 +1,4 @@
-/* Global
+/* global
 -----------------------------------------------------------------------------*/
 
 *,
@@ -23,4 +23,34 @@ body {
 
     --White: hsl(0, 0%, 100%);
     --Black: hsl(0, 0%, 7%);
+}
+
+/* content
+-----------------------------------------------------------------------------*/
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
+}
+
+/* social-media-10x
+-----------------------------------------------------------------------------*/
+
+.social-media-10x {
+    background-color: var(--Purple-500);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 15px;
+    color: var(--White)
+}
+
+.social-media-10x img {
+    width: 200px;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
