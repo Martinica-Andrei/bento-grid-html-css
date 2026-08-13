@@ -60,7 +60,7 @@ body {
     margin-bottom: 5px;
 }
 
-.social-media-10x strong{
+.social-media-10x strong {
     color: var(--Yellow-500);
 }
 
@@ -130,7 +130,7 @@ body {
     padding: 30px 20px;
     gap: 20px;
     text-align: center;
-    color:white;
+    color: white;
 }
 
 .grow-followers img {
@@ -139,31 +139,64 @@ body {
     order: -1;
 }
 
-.grow-followers h2{
+.grow-followers h2 {
     max-width: 300px;
 }
 
 /* faster-audience-growth
 -----------------------------------------------------------------------------*/
 
-.faster-audience-growth{
-    padding:15px 20px;
+.faster-audience-growth {
+    padding: 15px 20px;
 }
 
-.faster-audience-growth img{
+.faster-audience-growth img {
     max-width: 200px;
+    width: 100%;
 }
 
-.faster-audience-growth h2{
+.faster-audience-growth h2 {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    gap:15px;
+    gap: 15px;
     font-weight: normal;
     font-size: 1.2rem;
 }
 
-.faster-audience-growth strong{
+.faster-audience-growth strong {
     font-size: 3rem;
     font-weight: bold;
+}
+
+/* create-content-quicker
+-----------------------------------------------------------------------------*/
+
+.create-content-quicker {
+    padding: 25px;
+    background-color: var(--Yellow-100);
+}
+
+.create-content-quicker img {
+    max-width: 200px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.create-content-quicker em {
+    color: var(--Purple-500);
+}
+
+/* write-your-content
+-----------------------------------------------------------------------------*/
+
+.write-your-content {
+    padding:20px;
+    background-color: var(--Yellow-500);
+}
+
+.write-your-content img{
+    max-width: 250px;
+    width: 100%;
+    margin-top: 20px;
 }
