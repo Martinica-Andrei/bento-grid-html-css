@@ -102,15 +102,64 @@ body {
 
 .schedule-to-social-media {
     background-color: var(--Purple-100);
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px 20px;
-    gap:25px;
+    gap: 25px;
     text-align: center;
 }
 
 .schedule-to-social-media img {
     max-width: 400px;
     width: 100%;
+}
+
+/* grow-followers
+-----------------------------------------------------------------------------*/
+
+.grow-followers {
+    background-color: var(--Purple-500);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    gap: 20px;
+    text-align: center;
+    color:white;
+}
+
+.grow-followers img {
+    max-width: 300px;
+    width: 100%;
+    order: -1;
+}
+
+.grow-followers h2{
+    max-width: 300px;
+}
+
+/* faster-audience-growth
+-----------------------------------------------------------------------------*/
+
+.faster-audience-growth{
+    padding:15px 20px;
+}
+
+.faster-audience-growth img{
+    max-width: 200px;
+}
+
+.faster-audience-growth h2{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+.faster-audience-growth strong{
+    font-size: 3rem;
+    font-weight: bold;
 }
