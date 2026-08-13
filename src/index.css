@@ -60,6 +60,10 @@ body {
     margin-bottom: 5px;
 }
 
+.social-media-10x strong{
+    color: var(--Yellow-500);
+}
+
 /* manage-multiple 
 -----------------------------------------------------------------------------*/
 
