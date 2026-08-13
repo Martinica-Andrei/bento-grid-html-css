@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "dm-sans";
+    src: url("../assets/fonts/static/DMSans-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "dm-sans";
+    src: url("../assets/fonts/static/DMSans-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "dm-sans";
+    src: url("../assets/fonts/static/DMSans-MediumItalic.ttf");
+    font-weight: 500;
+    font-style: italic;
+}
